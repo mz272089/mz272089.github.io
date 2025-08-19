@@ -1,74 +1,103 @@
-
-   
-     <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>王同学的网站</title>
+    <title>晓白的官网</title>
     <style>
-        /* 设置全局样式 */
-        body, html {
+        body {
             margin: 0;
             padding: 0;
-            height: 100%; /* 确保页面高度占满整个屏幕 */
             font-family: Arial, sans-serif;
+            background-image: url('https://51.mk/images/2025/08/19/-.jpg');
+            background-size: cover;
+            background-position: center;
             color: white;
-            text-align: center;
-        }
-
-        /* 设置背景图片 */
-        body {
-            background-image: url('https://pic.51.mk/images/2025/03/01/background---.jpg'); /* 替换为你的背景图片路径 */
-            background-size: cover; /* 背景图片覆盖整个页面 */
-            background-position: center; /* 背景图片居中 */
-            background-repeat: no-repeat; /* 背景图片不重复 */
-            background-attachment: fixed; /* 背景图片固定，不随页面滚动 */
+            height: 100vh;
+            overflow: hidden; /* 禁用滚动 */
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* 内容分布在顶部和底部 */
         }
-
-        /* 标题样式 */
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-            padding-top: 50px; /* 标题与顶部的距离 */
+        
+        .header {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
         }
-
-        /* 超链接样式 */
-        a {
-            display: block;
-            margin: 10px 0;
-            font-size: 1.5em;
+        
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+        
+        .links a {
             color: white;
             text-decoration: none;
+            padding: 10px 20px;
+            background-color: rgba(50, 50, 200, 0.7);
+            border-radius: 5px;
+            transition: background-color 0.3s;
         }
-
-        a:hover {
-            color: yellow;
+        
+        .links a:hover {
+            background-color: rgba(70, 70, 220, 0.9);
         }
-
-        /* 底部文本样式 */
-        footer {
-            background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
-            padding: 10px;
-            font-size: 1em;
+        
+        .content {
+            flex: 1;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .footer {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+        }
+        
+        p {
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 10px auto;
         }
     </style>
 </head>
 <body>
-    <div>
-        <h1>王同学的网站</h1>
-        <a href="https://ncre.neea.edu.cn/" target="_blank">1. NCRE网站计算机考试</a>
-        <a href="https://msdn.itellyou.cn/" target="_blank">2. msdn系统库</a>
-        <a href="https://www.amd.com/zh-cn.html" target="_blank">3. AMD官网</a>
-        <a href="https://www.nvidia.cn/" target="_blank">4. 英伟达官网</a>
+    <div class="header">
+        <h1>晓白官网</h1>
+        <div class="links">
+            <a href="https://www.123912.com/s/q7xyjv-7sedd">PE下载链接(123云盘)</a>
+            <a href="https://www.123865.com/s/q7xyjv-7sedd">备用下载链接</a>
+            <a href="https://www.xiaohuiboke.cn/">小辉技术资源栈</a>
+            <a href="https://www.ventoy.net/cn/">Ventoy下载</a>
+        </div>
     </div>
-
-    <!-- 底部文本 -->
-    <footer>
-        QQ群：368959605 老实的电脑人   建议使用edge   本人小学生    QQ号：3897390650  电脑爱好者    
-    </footer>
+    
+    <div class="content">
+        <h2>欢迎访问</h2>
+        <p>这个项目是我在假期闲的没事干而诞生出来的，这个PE体积相对于别的PE来说比较臃肿了，如果有好的意见可以来群讨论1038943872</p>
+        <p>这里说明一下为什么不更新晓白PE(蔚蓝版本)了</p>
+        <p>1.开机的文件夹背景cmd弹窗太烦人了，我也没有合适的替代方案</p>
+        <p>2.本人退坑了</p>
+        <p>3.两个系统一起维护太难了没那个精力</p>
+        <p>4.做了也没啥意义，没人用</p>
+        <p>2025.8.19</p>
+    </div>
+    
+    <div class="footer">
+        <h3>说明区域</h3>
+        <p>作者哔哩哔哩（我的世界晓白）</p>
+    </div>
 </body>
 </html>
